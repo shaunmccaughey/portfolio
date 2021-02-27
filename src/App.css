@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* .contents,
+.sidenav,
+.navitem {
+  border: 0.5px dashed grey;
+} */
+
+.App {
+  width: 100%;
+  display: flex;
+}
+
+.sidenav {
+  width: 35vw;
+  background: linear-gradient(
+    180deg,
+    rgba(238, 103, 143, 1) 50%,
+    rgba(132, 124, 252, 1) 80%
+  );
+  font-size: 1.2rem;
+  padding: 3em;
+}
+
+.contents {
+  flex: 1;
+}
+
+.sidenav,
+.contents {
+  height: 100vh;
+}
+
+.navitem {
+  margin: 1.5rem auto;
+  text-align: center;
+}
+
+.active {
+  font-weight: bold;
+}
+.navitem-text {
+  text-decoration: none;
+  color: honeydew;
+}
+
+.display-picture {
+  border-radius: 50%;
+  width: 15rem;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.typing-effect {
+  margin: 5rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.social a {
+  margin: 1rem;
+  font-size: 2rem;
+  color: grey;
+}
+
+.about {
+  margin: 2rem;
+}
+
+.education {
+  margin: 2rem;
+}
+.widecard {
+  margin: 1rem;
+  padding: 1rem;
+}
+.widecard:hover {
+  box-shadow: 10px 10px grey;
+}
+.skills {
+  margin: 2rem;
+}
+.skills li {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.contact {
+  margin: 1rem;
+}
+
+.contact h3 {
+  margin: 2rem;
+}
