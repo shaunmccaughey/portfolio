@@ -3,13 +3,16 @@ function NavItem(props) {
   return (
     <div id={props.item} className="navitem">
       <Link
-        className="navitem-text"
+        className="navitem-icon"
         to={props.tolink}
         onClick={() => {
           props.handleNavItemOnClick(props.item);
         }}
       >
-        {props.item}
+        <div className="tooltip">
+          <span className="tooltiptext">{props.item}</span>
+          {props.icon}
+        </div>
       </Link>
     </div>
   );

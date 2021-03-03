@@ -21,26 +21,32 @@ class SideNav extends Component {
         <ul>
           <NavItem
             item="Home"
+            icon={<i class="fas fa-home"></i>}
             tolink="/"
             handleNavItemOnClick={this.handleNavItemOnClick}
           />
           <NavItem
+            className="person"
             item="About"
+            icon={<i class="far fa-meh-blank"></i>}
             tolink="/about"
             handleNavItemOnClick={this.handleNavItemOnClick}
           />
           <NavItem
-            item="Education"
-            tolink="/education"
+            item="Project"
+            icon={<i class="fas fa-laptop"></i>}
+            tolink="/project"
             handleNavItemOnClick={this.handleNavItemOnClick}
           />
           <NavItem
             item="Skills"
+            icon={<i class="fas fa-school"></i>}
             tolink="/skills"
             handleNavItemOnClick={this.handleNavItemOnClick}
           />
           <NavItem
             item="Contact"
+            icon={<i class="far fa-address-card"></i>}
             tolink="/contact"
             handleNavItemOnClick={this.handleNavItemOnClick}
           />

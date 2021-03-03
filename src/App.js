@@ -1,34 +1,37 @@
 import "./App.css";
 import SideNav from "./Common/SideNav";
 import Home from "./contents/Home";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import About from "./contents/About";
-import Education from "./contents/Education";
+import Project from "./contents/project";
 import Skills from "./contents/Skills";
 import Contact from "./contents/Contact";
+import { motion, AnimatePresence } from "framer-motion";
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <SideNav />
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/about">
-          <About />
-        </Route>
-        <Route exact path="/education">
-          <Education />
-        </Route>
-        <Route exact path="/skills">
-          <Skills />
-        </Route>
-        <Route exact path="/contact">
-          <Contact />
-        </Route>
-      </div>
-    </Router>
+    <AnimatePresence>
+      <Router>
+        <div className="App">
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/about">
+            <About />
+          </Route>
+          <Route exact path="/project">
+            <Project />
+          </Route>
+          <Route exact path="/skills">
+            <Skills />
+          </Route>
+          <Route exact path="/contact">
+            <Contact />
+          </Route>
+          <SideNav />
+        </div>
+      </Router>
+    </AnimatePresence>
   );
 }
 

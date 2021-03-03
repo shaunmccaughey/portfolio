@@ -1,3 +1,5 @@
+import postit from "../img/postit.png";
+
 export default function WideCard(props) {
   return (
     <div className="widecard">
